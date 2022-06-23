@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>project</title>
+    <style>
+        body {
+            text-align: center;
+            background-size: cover;
+            background-image: url("gugong3.jpg");
+        }
+        
+        #layout {
+            max-width: 1500px;
+            margin: auto;
+        }
+        
+        .background {
+            background-image: url("background1.png");
+            background-size: cover;
+            -webkit-background-clip: text;
+            -webkit-text-Fill-color: transparent;
+            overflow: hidden;
+        }
+        
+        h1 {
+            width: 100%;
+            letter-spacing: 10px;
+            color: #fff;
+        }
+        
+        p{
+            color: #fff;
+            width: 60%;
+            margin: auto;
+            font-size: 20px;
+            background-color: rgba(0, 0, 0, .3);
+        }
+        
+        .hyperlink {
+
+            width: 93%;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="layout">
+        <h1>Forbidden City</h1>
+        <div class="background"><span>故宫</span></div>
+        <img>
+        <p>The Forbidden City is the imperial palace of the two dynasties in Ming and Qing Dynasties, located in the center of Beijing's central axis. It is the cream of ancient Chinese palace architecture.
+            <br>
+            <br> The Forbidden City is centered on three main halls, covering an area of 720,000 square meters, with a construction area of about 150,000 square meters. It has more than 70 palaces and more than 9,000 houses. It is one of the largest and
+            most complete ancient wooden structures in the world.
+            <br>
+            <br> It is a rectangular city pool, 961 meters long north and south, 753 meters wide East and west, surrounded by a wall 10 meters high, and 52 meters wide moat outside. The buildings in the Forbidden City are divided into two parts: the Outer
+            Dynasty and the Inner Court.
+            <br>
+            <br>
+            <a href="cspfinalP2.html" class="hyperlink">Link to Tour Guide</a>
+            <br>
+            <br>
+        </p>
+    </div>
+    <script>
+        const background = document.querySelector(".background")
+        
+        let width = document.body.clientWidth
+        document.addEventListener('scroll', () => {
+            const scrollY = window.scrollY * 4
+            scrollY !== 0 ? background.style.backgroundPosition = `calc(50% + ${scrollY}px)calc(50% + ${scrollY}px)` : background.style.backgroundPosition = '';
+        })
+        document.addEventListener('mouseover', function() {
+            width = document.body.clientWidth
+            background.style.fontSize = width / (3.1) + 'px'
+            P.style.marginTop = background.style.fontSize / 100
+        })
+    </script>
+</body>
+
+</html>
