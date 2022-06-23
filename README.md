@@ -1,6 +1,6 @@
 # README
 
-This is our AP CSP final project about the Forbidden City. URL: https://github.com/KaiezZ04/Jacky-zhou-Jonathan-Tang-csp-final-project.git
+This is our AP CSP final project about the Forbidden City. URL: https://github.com/KaiezZ04/jacky-zhou-jonathan-tang-final.git
 
 # Built With
 
